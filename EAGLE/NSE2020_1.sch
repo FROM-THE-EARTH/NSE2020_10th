@@ -15924,6 +15924,8 @@ Source: www.kingbright.com</description>
 <part name="LIPO_CELL" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ2W" device="" package3d_urn="urn:adsk.eagle:package:15474/1"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="10k"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GPIO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16207,6 +16209,13 @@ Source: www.kingbright.com</description>
 <instance part="GND20" gate="1" x="66.04" y="30.48" smashed="yes">
 <attribute name="VALUE" x="63.5" y="27.94" size="1.778" layer="96"/>
 </instance>
+<instance part="GPIO" gate="A" x="73.66" y="144.78" smashed="yes">
+<attribute name="NAME" x="67.31" y="150.495" size="1.778" layer="95"/>
+<attribute name="VALUE" x="67.31" y="137.16" size="1.778" layer="96"/>
+</instance>
+<instance part="GND21" gate="1" x="66.04" y="147.32" smashed="yes" rot="R270">
+<attribute name="VALUE" x="63.5" y="149.86" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16332,6 +16341,11 @@ Source: www.kingbright.com</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="66.04" y1="33.02" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GPIO" gate="A" pin="1"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="68.58" y1="147.32" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DCDC2FET" class="2">
@@ -16952,6 +16966,20 @@ Source: www.kingbright.com</description>
 <pinref part="U$2" gate="G$1" pin="P$3"/>
 <pinref part="LIPO_CELL" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="12.7" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TX_3" class="5">
+<segment>
+<pinref part="MCU1" gate="G$1" pin="PB10-TX3"/>
+<pinref part="GPIO" gate="A" pin="3"/>
+<wire x1="63.5" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RX_3" class="5">
+<segment>
+<pinref part="GPIO" gate="A" pin="2"/>
+<pinref part="MCU1" gate="G$1" pin="PB11-RX3"/>
+<wire x1="71.12" y1="144.78" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
