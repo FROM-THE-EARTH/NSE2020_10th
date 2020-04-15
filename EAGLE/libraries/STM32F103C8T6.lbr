@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -208,8 +208,8 @@
 <pin name="PB7-SDA1" x="22.86" y="20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="PB8" x="22.86" y="22.86" visible="pin" length="middle" rot="R180"/>
 <pin name="PB9" x="22.86" y="25.4" visible="pin" length="middle" rot="R180"/>
-<pin name="PB10-TX3" x="22.86" y="27.94" visible="pin" length="middle" rot="R180"/>
-<pin name="PB11-RX3" x="22.86" y="30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="PB10-TX3/SCL2" x="22.86" y="27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="PB11-RX3/SDA2" x="22.86" y="30.48" visible="pin" length="middle" rot="R180"/>
 <pin name="PB12-NSS2" x="22.86" y="33.02" visible="pin" length="middle" rot="R180"/>
 <pin name="PB13-SCK2" x="22.86" y="35.56" visible="pin" length="middle" rot="R180"/>
 <pin name="PB14-MISO2" x="22.86" y="38.1" visible="pin" length="middle" rot="R180"/>
@@ -262,8 +262,8 @@
 <connect gate="G$1" pin="PA9-TX1" pad="30"/>
 <connect gate="G$1" pin="PB0" pad="18"/>
 <connect gate="G$1" pin="PB1" pad="19"/>
-<connect gate="G$1" pin="PB10-TX3" pad="21"/>
-<connect gate="G$1" pin="PB11-RX3" pad="22"/>
+<connect gate="G$1" pin="PB10-TX3/SCL2" pad="21"/>
+<connect gate="G$1" pin="PB11-RX3/SDA2" pad="22"/>
 <connect gate="G$1" pin="PB12-NSS2" pad="25"/>
 <connect gate="G$1" pin="PB13-SCK2" pad="26"/>
 <connect gate="G$1" pin="PB14-MISO2" pad="27"/>
