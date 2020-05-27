@@ -15375,20 +15375,20 @@ Source: www.kingbright.com</description>
 <library name="databus">
 <packages>
 <package name="8X2">
-<pad name="P0" x="-1.27" y="7.62" drill="0.8" shape="square"/>
-<pad name="P1" x="-1.27" y="5.08" drill="0.8" shape="square"/>
-<pad name="P2" x="-1.27" y="2.54" drill="0.8" shape="square"/>
-<pad name="P3" x="-1.27" y="0" drill="0.8" shape="square"/>
-<pad name="P4" x="-1.27" y="-5.08" drill="0.8" shape="square"/>
-<pad name="P5" x="-1.27" y="-7.62" drill="0.8" shape="square"/>
-<pad name="P6" x="-1.27" y="-10.16" drill="0.8" shape="square"/>
-<pad name="P7" x="1.27" y="-10.16" drill="0.8" shape="square"/>
-<pad name="P8" x="1.27" y="-7.62" drill="0.8" shape="square"/>
-<pad name="P9" x="1.27" y="-5.08" drill="0.8" shape="square"/>
-<pad name="P10" x="1.27" y="0" drill="0.8" shape="square"/>
-<pad name="P11" x="1.27" y="2.54" drill="0.8" shape="square"/>
-<pad name="P12" x="1.27" y="5.08" drill="0.8" shape="square"/>
-<pad name="P13" x="1.27" y="7.62" drill="0.8" shape="square"/>
+<pad name="P0" x="-1.27" y="7.62" drill="0.9" shape="square"/>
+<pad name="P1" x="-1.27" y="5.08" drill="0.9" shape="square"/>
+<pad name="P2" x="-1.27" y="2.54" drill="0.9" shape="square"/>
+<pad name="P3" x="-1.27" y="0" drill="0.9" shape="square"/>
+<pad name="P4" x="-1.27" y="-5.08" drill="0.9" shape="square"/>
+<pad name="P5" x="-1.27" y="-7.62" drill="0.9" shape="square"/>
+<pad name="P6" x="-1.27" y="-10.16" drill="0.9" shape="square"/>
+<pad name="P7" x="1.27" y="-10.16" drill="0.9" shape="square"/>
+<pad name="P8" x="1.27" y="-7.62" drill="0.9" shape="square"/>
+<pad name="P9" x="1.27" y="-5.08" drill="0.9" shape="square"/>
+<pad name="P10" x="1.27" y="0" drill="0.9" shape="square"/>
+<pad name="P11" x="1.27" y="2.54" drill="0.9" shape="square"/>
+<pad name="P12" x="1.27" y="5.08" drill="0.9" shape="square"/>
+<pad name="P13" x="1.27" y="7.62" drill="0.9" shape="square"/>
 <wire x1="-2.54" y1="8.89" x2="2.54" y2="8.89" width="0.127" layer="21"/>
 <wire x1="2.54" y1="8.89" x2="2.54" y2="-11.43" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-11.43" x2="-2.54" y2="-11.43" width="0.127" layer="21"/>
@@ -15407,8 +15407,8 @@ Source: www.kingbright.com</description>
 <text x="3.175" y="-5.715" size="1.27" layer="25">RX2</text>
 <text x="3.175" y="-8.255" size="1.27" layer="25">TX2</text>
 <text x="3.175" y="-10.795" size="1.27" layer="25">5V</text>
-<pad name="P14" x="-1.27" y="-2.54" drill="0.8" shape="square"/>
-<pad name="P15" x="1.27" y="-2.54" drill="0.8" shape="square"/>
+<pad name="P14" x="-1.27" y="-2.54" drill="0.9" shape="square"/>
+<pad name="P15" x="1.27" y="-2.54" drill="0.9" shape="square"/>
 <text x="-3.175" y="-3.175" size="1.27" layer="25" align="bottom-right">GPIO3</text>
 <text x="3.175" y="-3.175" size="1.27" layer="25">GPIO4</text>
 </package>
@@ -15679,16 +15679,16 @@ Source: www.kingbright.com</description>
 <library name="MPU9250">
 <packages>
 <package name="GY-9250">
-<pad name="P1" x="-7" y="11.5" drill="0.8"/>
-<pad name="P2" x="-7" y="8.96" drill="0.8"/>
-<pad name="P3" x="-7" y="6.42" drill="0.8"/>
-<pad name="P4" x="-7" y="3.88" drill="0.8"/>
-<pad name="P5" x="-7" y="1.34" drill="0.8"/>
-<pad name="P6" x="-7" y="-1.2" drill="0.8"/>
-<pad name="P7" x="-7" y="-3.74" drill="0.8"/>
-<pad name="P8" x="-7" y="-6.28" drill="0.8"/>
-<pad name="P9" x="-7" y="-8.82" drill="0.8"/>
-<pad name="P10" x="-7" y="-11.36" drill="0.8"/>
+<pad name="P1" x="-7" y="11.5" drill="0.9"/>
+<pad name="P2" x="-7" y="8.96" drill="0.9"/>
+<pad name="P3" x="-7" y="6.42" drill="0.9"/>
+<pad name="P4" x="-7" y="3.88" drill="0.9"/>
+<pad name="P5" x="-7" y="1.34" drill="0.9"/>
+<pad name="P6" x="-7" y="-1.2" drill="0.9"/>
+<pad name="P7" x="-7" y="-3.74" drill="0.9"/>
+<pad name="P8" x="-7" y="-6.28" drill="0.9"/>
+<pad name="P9" x="-7" y="-8.82" drill="0.9"/>
+<pad name="P10" x="-7" y="-11.36" drill="0.9"/>
 <wire x1="-8" y1="13" x2="8" y2="13" width="0.127" layer="21"/>
 <wire x1="8" y1="13" x2="8" y2="-13" width="0.127" layer="21"/>
 <wire x1="8" y1="-13" x2="-8" y2="-13" width="0.127" layer="21"/>
@@ -18449,9 +18449,9 @@ Source: www.kingbright.com</description>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="1k"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="1k"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="1k"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/2"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/2"/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/2"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1"/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="BUS1" library="databus" deviceset="DATABUS" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -18471,7 +18471,7 @@ Source: www.kingbright.com</description>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SWD" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/2"/>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="1k"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
