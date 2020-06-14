@@ -18428,7 +18428,6 @@ Source: www.kingbright.com</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="MCU1" library="STM32F103C8T6" deviceset="STM32F103C8T6" device=""/>
-<part name="BOOT0" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="10k"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -18484,11 +18483,14 @@ Source: www.kingbright.com</description>
 <part name="GPIO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="FET4" library="2SJ681" deviceset="2SJ681" device=""/>
 <part name="FET3" library="2SJ681" deviceset="2SJ681" device=""/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="10k"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="1k"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="10k"/>
 <part name="+3V11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$1" library="logo" deviceset="F.T.E.LOGO" device=""/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="10k"/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="BOOT0" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -18567,10 +18569,6 @@ Source: www.kingbright.com</description>
 <instance part="MCU1" gate="G$1" x="40.64" y="114.3" smashed="yes">
 <attribute name="NAME" x="25.4" y="154.94" size="1.778" layer="95"/>
 <attribute name="VALUE" x="25.4" y="152.4" size="1.778" layer="96"/>
-</instance>
-<instance part="BOOT0" gate="A" x="-5.08" y="66.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="1.27" y="60.325" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="1.27" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R3" gate="G$1" x="10.16" y="73.66" smashed="yes">
 <attribute name="NAME" x="6.35" y="75.1586" size="1.778" layer="95"/>
@@ -18762,7 +18760,7 @@ Source: www.kingbright.com</description>
 </instance>
 <instance part="FET4" gate="G$1" x="96.52" y="12.7" smashed="yes" rot="MR180"/>
 <instance part="FET3" gate="G$1" x="83.82" y="12.7" smashed="yes" rot="R180"/>
-<instance part="R10" gate="G$1" x="88.9" y="121.92" smashed="yes" rot="R90">
+<instance part="R15" gate="G$1" x="88.9" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.4014" y="118.11" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="92.202" y="118.11" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -18777,6 +18775,17 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="116.84" y="109.22" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="35.56" y="109.22" smashed="yes"/>
+<instance part="R10" gate="G$1" x="78.74" y="121.92" smashed="yes">
+<attribute name="NAME" x="74.93" y="123.4186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.93" y="118.618" size="1.778" layer="96"/>
+</instance>
+<instance part="GND18" gate="1" x="83.82" y="116.84" smashed="yes">
+<attribute name="VALUE" x="81.28" y="114.3" size="1.778" layer="96"/>
+</instance>
+<instance part="BOOT0" gate="A" x="-2.54" y="66.04" smashed="yes" rot="R180">
+<attribute name="NAME" x="3.81" y="60.325" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="3.81" y="73.66" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18826,10 +18835,9 @@ Source: www.kingbright.com</description>
 <wire x1="-17.78" y1="45.72" x2="-17.78" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BOOT0" gate="A" pin="1"/>
-<wire x1="-2.54" y1="63.5" x2="0" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="0" y1="63.5" x2="0" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="0" y1="60.96" x2="0" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="BOOT0" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="P1"/>
@@ -18904,6 +18912,11 @@ Source: www.kingbright.com</description>
 <pinref part="GPIO" gate="A" pin="3"/>
 <wire x1="73.66" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="83.82" y1="121.92" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DCDC2FET" class="2">
 <segment>
@@ -18964,10 +18977,9 @@ Source: www.kingbright.com</description>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="BOOT0" gate="A" pin="3"/>
-<wire x1="-2.54" y1="68.58" x2="0" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="0" y1="68.58" x2="0" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<pinref part="BOOT0" gate="A" pin="3"/>
 </segment>
 <segment>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
@@ -19005,7 +19017,7 @@ Source: www.kingbright.com</description>
 <pinref part="MPU1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -19111,11 +19123,11 @@ Source: www.kingbright.com</description>
 </net>
 <net name="BOOT0" class="1">
 <segment>
-<pinref part="BOOT0" gate="A" pin="2"/>
-<wire x1="2.54" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="66.04" x2="2.54" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="BOOT0" gate="A" pin="2"/>
+<wire x1="2.54" y1="66.04" x2="0" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NRST" class="1">
@@ -19186,9 +19198,9 @@ Source: www.kingbright.com</description>
 <label x="162.56" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MCU1" gate="G$1" pin="PB0"/>
-<wire x1="66.04" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
-<label x="63.5" y="116.84" size="1.778" layer="95"/>
+<pinref part="MCU1" gate="G$1" pin="PA15"/>
+<wire x1="63.5" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+<label x="63.5" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO2" class="1">
@@ -19203,9 +19215,9 @@ Source: www.kingbright.com</description>
 <label x="162.56" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MCU1" gate="G$1" pin="PB1"/>
-<wire x1="66.04" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
-<label x="63.5" y="119.38" size="1.778" layer="95"/>
+<pinref part="MCU1" gate="G$1" pin="PB0"/>
+<wire x1="66.04" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
+<label x="63.5" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO3" class="1">
@@ -19220,9 +19232,9 @@ Source: www.kingbright.com</description>
 <label x="162.56" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MCU1" gate="G$1" pin="PB2"/>
-<wire x1="66.04" y1="121.92" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
-<label x="63.5" y="121.92" size="1.778" layer="95"/>
+<pinref part="MCU1" gate="G$1" pin="PB1"/>
+<wire x1="66.04" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
+<label x="63.5" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO4" class="1">
@@ -19329,7 +19341,7 @@ Source: www.kingbright.com</description>
 <wire x1="86.36" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="116.84" x2="88.9" y2="111.76" width="0.1524" layer="91"/>
 <junction x="88.9" y="111.76"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SWCLK" class="1">
@@ -19595,6 +19607,14 @@ Source: www.kingbright.com</description>
 <pinref part="CN1" gate="G$1" pin="CD/DAT3"/>
 <wire x1="129.54" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <label x="114.3" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BOOT1" class="1">
+<segment>
+<pinref part="MCU1" gate="G$1" pin="PB2"/>
+<wire x1="63.5" y1="121.92" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<label x="63.5" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
